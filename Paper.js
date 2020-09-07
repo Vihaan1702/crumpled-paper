@@ -9,6 +9,7 @@ class Paper {
       }
       this.x=x;
      this.y=y;
+     this.image = loadImage("images/paper.png");
       this.r=r
       
       
@@ -27,6 +28,8 @@ class Paper {
       
       fill("blue");
       ellipse(0,0,this.r,this.r)
+      ImageMode(CENTER)
+      this.image(this.image,0,0,this.width,this.height);
       pop();
    
     }

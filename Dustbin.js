@@ -4,6 +4,7 @@ class dustbin
 	{
 		this.x=x;
 		this.y=y;
+		this.image = loadImage("images/Dustbingreen.png")
 		this.dustbinWidth=200;
 		this.dustbinHeight=100;
 		this.wallThickness=20;
@@ -47,6 +48,8 @@ class dustbin
 			stroke(255)
 			angleMode(RADIANS)
 			fill(255)
+			ImageMode(CENTER)
+			this.image(this.image,0,0,this.width,this.height);
 			rotate(-1*this.angle)
 			rect(0,0,this.wallThickness, this.dustbinHeight);
 			pop()
