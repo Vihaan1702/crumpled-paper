@@ -9,7 +9,7 @@ class Dustbin
 		this.wallThickness=5;
 		this.angle=0;
 		
-		this.dustbinImg=loadImage("dustbingreen.png")
+		this.dustbinImg=loadImage("images/dustbingreen.png")
 			
 			   
 		
